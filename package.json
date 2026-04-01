@@ -1,0 +1,29 @@
+{
+  "name": "pokemon-ev-spreads-vgc",
+  "version": "2.0.0",
+  "description": "Community VGC EV spreads database for Regulation F — JSON data and CLI lookup tool",
+  "main": "data/ev-spreads.json",
+  "scripts": {
+    "lookup": "node scripts/lookup.js",
+    "validate": "node -e \"JSON.parse(require('fs').readFileSync('data/ev-spreads.json','utf8')); console.log('✓ ev-spreads.json is valid JSON')\""
+  },
+  "keywords": [
+    "pokemon",
+    "vgc",
+    "competitive-pokemon",
+    "ev-spreads",
+    "regulation-f",
+    "doubles",
+    "pokemon-tools",
+    "vgc-2024"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/twjojo/pokemon-ev-spreads-vgc.git"
+  },
+  "homepage": "https://pokestats.cc/guides/vgc-ev-training-guide",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

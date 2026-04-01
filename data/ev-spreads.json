@@ -1,0 +1,819 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "regulation": "F",
+    "format": "VGC Doubles (Level 50)",
+    "last_updated": "2026-04-01",
+    "source": "Tournament results, Regulation F team reports",
+    "schema_version": "1.2"
+  },
+  "pokemon": [
+    {
+      "name": "Incineroar",
+      "dex": 727,
+      "type": ["Fire", "Dark"],
+      "role": "Support",
+      "base_stats": { "hp": 95, "atk": 115, "def": 90, "spa": 65, "spd": 90, "spe": 60 },
+      "spreads": [
+        {
+          "id": "incin-av-max-spd",
+          "label": "Assault Vest Max Special Bulk",
+          "nature": "Careful",
+          "evs": { "hp": 252, "atk": 0, "def": 4, "spa": 0, "spd": 252, "spe": 0 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Assault Vest",
+          "moves": ["Fake Out", "Parting Shot", "Knock Off", "Flare Blitz"],
+          "tera_type": "Fire",
+          "usage_tier": "S",
+          "notes": "Standard. Maximizes SpDef to survive Kyogre Origin Pulse and Flutter Mane Moonblast. 4 Def gives odd HP number for Sitrus Berry efficiency if swapped.",
+          "benchmarks": [
+            "Survives Modest Kyogre Origin Pulse from full HP",
+            "Survives Timid Flutter Mane Moonblast in Sunlight",
+            "Survives Modest Miraidon Dazzling Gleam"
+          ]
+        },
+        {
+          "id": "incin-sitrus-balanced",
+          "label": "Sitrus Berry Balanced Bulk",
+          "nature": "Careful",
+          "evs": { "hp": 252, "atk": 0, "def": 132, "spa": 0, "spd": 124, "spe": 0 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Sitrus Berry",
+          "moves": ["Fake Out", "Parting Shot", "Knock Off", "Will-O-Wisp"],
+          "tera_type": "Ghost",
+          "usage_tier": "A",
+          "notes": "Balanced physical and special bulk. Tera Ghost removes Normal and Fighting weaknesses, prevents Fake Out from being redirected through it.",
+          "benchmarks": [
+            "Survives Jolly Urshifu Surging Strikes 3 hits",
+            "Survives Adamant Koraidon Flare Blitz"
+          ]
+        },
+        {
+          "id": "incin-safety-goggles",
+          "label": "Safety Goggles Anti-Spore",
+          "nature": "Careful",
+          "evs": { "hp": 252, "atk": 0, "def": 4, "spa": 0, "spd": 252, "spe": 0 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Safety Goggles",
+          "moves": ["Fake Out", "Parting Shot", "Knock Off", "Flare Blitz"],
+          "tera_type": "Fire",
+          "usage_tier": "A",
+          "notes": "Counters Amoonguss Spore/Rage Powder. Use when Amoonguss is common in the meta. Loses AV special bulk.",
+          "benchmarks": [
+            "Immune to Amoonguss Spore and Rage Powder redirection"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Koraidon",
+      "dex": 1007,
+      "type": ["Fighting", "Dragon"],
+      "role": "Restricted Attacker",
+      "base_stats": { "hp": 100, "atk": 135, "def": 115, "spa": 85, "spd": 100, "spe": 135 },
+      "spreads": [
+        {
+          "id": "koraidon-cb-max",
+          "label": "Choice Band Max Speed",
+          "nature": "Jolly",
+          "evs": { "hp": 4, "atk": 252, "def": 0, "spa": 0, "spd": 0, "spe": 252 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Choice Band",
+          "moves": ["Collision Course", "Flare Blitz", "Wild Charge", "Protect"],
+          "tera_type": "Fire",
+          "usage_tier": "S",
+          "notes": "Primary set. Jolly ensures speed tie win against other base 135 Speed. Choice Band Collision Course OHKOs most non-resistant targets.",
+          "benchmarks": [
+            "OHKOs 4 HP Urshifu with Choice Band Collision Course",
+            "OHKOs 252 HP Incineroar with Choice Band Flare Blitz in Sun"
+          ]
+        },
+        {
+          "id": "koraidon-lo-bulky",
+          "label": "Life Orb Bulk + Speed Benchmark",
+          "nature": "Adamant",
+          "evs": { "hp": 196, "atk": 252, "def": 0, "spa": 0, "spd": 0, "spe": 60 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Life Orb",
+          "moves": ["Collision Course", "Flare Blitz", "Drain Punch", "Protect"],
+          "tera_type": "Fighting",
+          "usage_tier": "A",
+          "notes": "60 Spe EVs reach 144 Speed at Lv50, outspeeding base 130 uninvested. Adamant + more HP investment for extra bulk. Drain Punch provides recovery.",
+          "benchmarks": [
+            "Outspeeds uninvested base 130 Speed Pokémon",
+            "Survives Kyogre Water Spout at full HP with 196 HP EVs"
+          ]
+        },
+        {
+          "id": "koraidon-tr",
+          "label": "Trick Room Brave",
+          "nature": "Brave",
+          "evs": { "hp": 252, "atk": 252, "def": 4, "spa": 0, "spd": 0, "spe": 0 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 0, "spd": 31, "spe": 0 },
+          "item": "Choice Band",
+          "moves": ["Collision Course", "Flare Blitz", "Wild Charge", "Protect"],
+          "tera_type": "Fire",
+          "usage_tier": "B",
+          "notes": "0 IVs Speed + Brave nature minimizes Speed for Trick Room priority. Paired with Porygon2 or Cresselia TR setters.",
+          "benchmarks": []
+        }
+      ]
+    },
+    {
+      "name": "Miraidon",
+      "dex": 1008,
+      "type": ["Electric", "Dragon"],
+      "role": "Restricted Attacker",
+      "base_stats": { "hp": 100, "atk": 85, "def": 100, "spa": 135, "spd": 115, "spe": 135 },
+      "spreads": [
+        {
+          "id": "miraidon-specs-max",
+          "label": "Choice Specs Max Output",
+          "nature": "Timid",
+          "evs": { "hp": 4, "atk": 0, "def": 0, "spa": 252, "spd": 0, "spe": 252 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Choice Specs",
+          "moves": ["Electro Drift", "Draco Meteor", "Dazzling Gleam", "Volt Switch"],
+          "tera_type": "Electric",
+          "usage_tier": "S",
+          "notes": "Primary set. Timid outspeeds base 130 Speed. Hadron Engine + Choice Specs Electro Drift reaches ~300 effective SpAtk. Tera Electric removes Dragon weakness.",
+          "benchmarks": [
+            "OHKOs 252 HP Iron Hands with Choice Specs Electro Drift in Electric Terrain",
+            "OHKOs 4 HP Koraidon with Draco Meteor"
+          ]
+        },
+        {
+          "id": "miraidon-av-bulky",
+          "label": "Assault Vest Bulky Attacker",
+          "nature": "Modest",
+          "evs": { "hp": 252, "atk": 0, "def": 0, "spa": 252, "spd": 4, "spe": 0 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Assault Vest",
+          "moves": ["Electro Drift", "Draco Meteor", "Dazzling Gleam", "Parabolic Charge"],
+          "tera_type": "Fairy",
+          "usage_tier": "A",
+          "notes": "Bulkier approach. Parabolic Charge spread for HP recovery. Modest trades speed for extra SpAtk. Tera Fairy removes Dragon weakness.",
+          "benchmarks": [
+            "Survives Calyrex-Shadow Astral Barrage from full HP"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Flutter Mane",
+      "dex": 987,
+      "type": ["Ghost", "Fairy"],
+      "role": "Special Attacker",
+      "base_stats": { "hp": 55, "atk": 55, "def": 55, "spa": 135, "spd": 135, "spe": 105 },
+      "spreads": [
+        {
+          "id": "flutter-specs-max",
+          "label": "Choice Specs Max Output",
+          "nature": "Timid",
+          "evs": { "hp": 4, "atk": 0, "def": 0, "spa": 252, "spd": 0, "spe": 252 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Choice Specs",
+          "moves": ["Moonblast", "Shadow Ball", "Psyshock", "Mystical Fire"],
+          "tera_type": "Fairy",
+          "usage_tier": "S",
+          "notes": "Standard. Protosynthesis in sun boosts SpAtk to ~203 effective. Psyshock hits Assault Vest users on Def stat.",
+          "benchmarks": [
+            "OHKOs 252 HP Incineroar with Moonblast in Sunlight",
+            "OHKOs 4 HP Urshifu with Shadow Ball"
+          ]
+        },
+        {
+          "id": "flutter-booster-sash",
+          "label": "Focus Sash Lead",
+          "nature": "Timid",
+          "evs": { "hp": 4, "atk": 0, "def": 0, "spa": 252, "spd": 0, "spe": 252 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Focus Sash",
+          "moves": ["Moonblast", "Shadow Ball", "Mystical Fire", "Taunt"],
+          "tera_type": "Fairy",
+          "usage_tier": "A",
+          "notes": "Lead set. Focus Sash guarantees survival on first hit. Taunt blocks Trick Room setup, speed control moves.",
+          "benchmarks": [
+            "Guaranteed survival from full HP regardless of incoming damage"
+          ]
+        },
+        {
+          "id": "flutter-booster-sun",
+          "label": "Booster Energy Sun Attacker",
+          "nature": "Modest",
+          "evs": { "hp": 4, "atk": 0, "def": 0, "spa": 252, "spd": 0, "spe": 252 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Booster Energy",
+          "moves": ["Moonblast", "Shadow Ball", "Dazzling Gleam", "Protect"],
+          "tera_type": "Normal",
+          "usage_tier": "A",
+          "notes": "Booster Energy activates when not in Sunlight. Modest for extra SpAtk when not using Protosynthesis. Tera Normal + Boomburst alternative for spread.",
+          "benchmarks": []
+        }
+      ]
+    },
+    {
+      "name": "Iron Hands",
+      "dex": 994,
+      "type": ["Fighting", "Electric"],
+      "role": "Trick Room Attacker",
+      "base_stats": { "hp": 154, "atk": 140, "def": 108, "spa": 50, "spd": 68, "spe": 50 },
+      "spreads": [
+        {
+          "id": "ironhands-av-brave",
+          "label": "Assault Vest Trick Room",
+          "nature": "Brave",
+          "evs": { "hp": 252, "atk": 252, "def": 4, "spa": 0, "spd": 0, "spe": 0 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 0 },
+          "item": "Assault Vest",
+          "moves": ["Close Combat", "Wild Charge", "Heavy Slam", "Fake Out"],
+          "tera_type": "Fire",
+          "usage_tier": "S",
+          "notes": "Standard. 0 IVs Speed ensures Iron Hands acts first under Trick Room vs other slow Pokémon. Quark Drive in Electric Terrain boosts Attack 30%.",
+          "benchmarks": [
+            "Effective 182 Attack with Quark Drive in Electric Terrain",
+            "OHKOs 4 HP Calyrex-Shadow with Close Combat",
+            "Survives multiple neutral hits with 252 HP"
+          ]
+        },
+        {
+          "id": "ironhands-lo-brave",
+          "label": "Life Orb Trick Room Burst",
+          "nature": "Brave",
+          "evs": { "hp": 252, "atk": 252, "def": 4, "spa": 0, "spd": 0, "spe": 0 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 0 },
+          "item": "Life Orb",
+          "moves": ["Close Combat", "Wild Charge", "Thunder Punch", "Fake Out"],
+          "tera_type": "Normal",
+          "usage_tier": "A",
+          "notes": "Higher burst damage than AV. Life Orb + QD gives enormous output but reduces longevity. Tera Normal for Hyper Voice spread option.",
+          "benchmarks": []
+        }
+      ]
+    },
+    {
+      "name": "Kyogre",
+      "dex": 382,
+      "type": ["Water"],
+      "role": "Restricted Attacker",
+      "base_stats": { "hp": 100, "atk": 100, "def": 90, "spa": 150, "spd": 140, "spe": 90 },
+      "spreads": [
+        {
+          "id": "kyogre-scarf-modest",
+          "label": "Choice Scarf Speed Control",
+          "nature": "Modest",
+          "evs": { "hp": 4, "atk": 0, "def": 0, "spa": 252, "spd": 0, "spe": 252 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Choice Scarf",
+          "moves": ["Origin Pulse", "Water Spout", "Thunder", "Ice Beam"],
+          "tera_type": "Water",
+          "usage_tier": "S",
+          "notes": "Most common set. Scarf outspeeds Calyrex-Shadow. Thunder has 100% accuracy in Rain. Water Spout at full HP is strongest option.",
+          "benchmarks": [
+            "Outspeeds Timid Calyrex-Shadow with Choice Scarf",
+            "Thunder 100% accuracy in Drizzle rain",
+            "Water Spout = 150 BP at full HP in rain"
+          ]
+        },
+        {
+          "id": "kyogre-specs-timid",
+          "label": "Choice Specs Max SpAtk",
+          "nature": "Timid",
+          "evs": { "hp": 4, "atk": 0, "def": 0, "spa": 252, "spd": 0, "spe": 252 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Choice Specs",
+          "moves": ["Origin Pulse", "Water Spout", "Thunder", "Ice Beam"],
+          "tera_type": "Water",
+          "usage_tier": "A",
+          "notes": "Timid for speed tie vs other base 90. Specs for higher damage ceiling but locked into moves. Less speed control flexibility than Scarf.",
+          "benchmarks": [
+            "OHKOs 252 HP Incineroar with Origin Pulse in rain"
+          ]
+        },
+        {
+          "id": "kyogre-av-bulky",
+          "label": "Assault Vest Bulky Attacker",
+          "nature": "Modest",
+          "evs": { "hp": 252, "atk": 0, "def": 0, "spa": 252, "spd": 4, "spe": 0 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Assault Vest",
+          "moves": ["Origin Pulse", "Water Spout", "Thunder", "Ice Beam"],
+          "tera_type": "Grass",
+          "usage_tier": "A",
+          "notes": "Tera Grass neutralizes Electric and Grass weaknesses. AV + high SpDef base creates enormous special bulk. Slower but harder to KO.",
+          "benchmarks": [
+            "Survives Timid Miraidon Choice Specs Electro Drift in Electric Terrain"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Calyrex-Shadow",
+      "dex": 898,
+      "form": "Shadow Rider",
+      "type": ["Psychic", "Ghost"],
+      "role": "Restricted Attacker",
+      "base_stats": { "hp": 100, "atk": 85, "def": 80, "spa": 165, "spd": 100, "spe": 150 },
+      "spreads": [
+        {
+          "id": "calyrex-s-sash",
+          "label": "Focus Sash Lead",
+          "nature": "Timid",
+          "evs": { "hp": 4, "atk": 0, "def": 0, "spa": 252, "spd": 0, "spe": 252 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Focus Sash",
+          "moves": ["Astral Barrage", "Expanding Force", "Shadow Ball", "Protect"],
+          "tera_type": "Stellar",
+          "usage_tier": "S",
+          "notes": "Standard. Focus Sash guarantees one Astral Barrage. Expanding Force in Psychic Terrain = 130 BP + Barrage-like power. Timid outspeeds base 135 uninvested.",
+          "benchmarks": [
+            "Guaranteed survival on first hit with Focus Sash",
+            "Expanding Force 130 BP in Psychic Terrain vs single target"
+          ]
+        },
+        {
+          "id": "calyrex-s-lo",
+          "label": "Life Orb Max Output",
+          "nature": "Timid",
+          "evs": { "hp": 4, "atk": 0, "def": 0, "spa": 252, "spd": 0, "spe": 252 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Life Orb",
+          "moves": ["Astral Barrage", "Expanding Force", "Psyshock", "Protect"],
+          "tera_type": "Stellar",
+          "usage_tier": "A",
+          "notes": "Higher ceiling damage. Psyshock hits Assault Vest Incineroar and Urshifu on physical Def. More risk from Life Orb recoil.",
+          "benchmarks": []
+        }
+      ]
+    },
+    {
+      "name": "Calyrex-Ice",
+      "dex": 898,
+      "form": "Ice Rider",
+      "type": ["Psychic", "Ice"],
+      "role": "Trick Room Restricted Attacker",
+      "base_stats": { "hp": 100, "atk": 165, "def": 150, "spa": 85, "spd": 130, "spe": 50 },
+      "spreads": [
+        {
+          "id": "calyrex-i-av-brave",
+          "label": "Assault Vest Trick Room",
+          "nature": "Brave",
+          "evs": { "hp": 252, "atk": 252, "def": 4, "spa": 0, "spd": 0, "spe": 0 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 0 },
+          "item": "Assault Vest",
+          "moves": ["Glacial Lance", "High Horsepower", "Leech Life", "Protect"],
+          "tera_type": "Ice",
+          "usage_tier": "S",
+          "notes": "Primary set. 0 IVs Speed + Brave minimizes Speed for TR priority. Glacial Lance 120 BP spread. High Horsepower Steel coverage. AV patches weak SpDef.",
+          "benchmarks": [
+            "Glacial Lance OHKOs 4 HP Calyrex-Shadow",
+            "Effectively ~248 Attack at Lv50 with 252 EVs"
+          ]
+        },
+        {
+          "id": "calyrex-i-cb-brave",
+          "label": "Choice Band Maximum Damage",
+          "nature": "Brave",
+          "evs": { "hp": 252, "atk": 252, "def": 4, "spa": 0, "spd": 0, "spe": 0 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 0 },
+          "item": "Choice Band",
+          "moves": ["Glacial Lance", "High Horsepower", "Leech Life", "Protect"],
+          "tera_type": "Ice",
+          "usage_tier": "A",
+          "notes": "Higher damage ceiling. Choice Band Glacial Lance threatens OHKOs on more targets. Loses AV special bulk.",
+          "benchmarks": [
+            "Choice Band Glacial Lance OHKOs 4 HP Miraidon"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tornadus",
+      "dex": 641,
+      "form": "Incarnate",
+      "type": ["Flying"],
+      "role": "Prankster Support",
+      "base_stats": { "hp": 79, "atk": 115, "def": 70, "spa": 125, "spd": 80, "spe": 111 },
+      "spreads": [
+        {
+          "id": "tornadus-mental-herb",
+          "label": "Mental Herb Max HP Support",
+          "nature": "Timid",
+          "evs": { "hp": 252, "atk": 0, "def": 4, "spa": 0, "spd": 0, "spe": 252 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Mental Herb",
+          "moves": ["Tailwind", "Taunt", "Rain Dance", "Hurricane"],
+          "tera_type": "Flying",
+          "usage_tier": "S",
+          "notes": "Standard lead. Mental Herb cures Taunt once. Prankster Tailwind sets speed control before any opponent acts. Taunt shuts down Trick Room setters.",
+          "benchmarks": [
+            "Prankster Tailwind acts before all non-priority moves",
+            "Prankster Taunt prevents Trick Room on same turn"
+          ]
+        },
+        {
+          "id": "tornadus-safety-goggles",
+          "label": "Safety Goggles Anti-Spore",
+          "nature": "Timid",
+          "evs": { "hp": 252, "atk": 0, "def": 0, "spa": 4, "spd": 0, "spe": 252 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Safety Goggles",
+          "moves": ["Tailwind", "Taunt", "Hurricane", "Bleakwind Storm"],
+          "tera_type": "Electric",
+          "usage_tier": "A",
+          "notes": "Immune to Amoonguss Spore. Bleakwind Storm = spread Flying 100 BP 30% Speed drop. Tera Electric removes Flying weakness to Ice/Rock.",
+          "benchmarks": []
+        }
+      ]
+    },
+    {
+      "name": "Amoonguss",
+      "dex": 591,
+      "type": ["Grass", "Poison"],
+      "role": "Redirect Support",
+      "base_stats": { "hp": 114, "atk": 85, "def": 70, "spa": 85, "spd": 80, "spe": 30 },
+      "spreads": [
+        {
+          "id": "amoonguss-sitrus-max-def",
+          "label": "Sitrus Berry Max Physical Bulk",
+          "nature": "Bold",
+          "evs": { "hp": 252, "atk": 0, "def": 252, "spa": 4, "spd": 0, "spe": 0 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Sitrus Berry",
+          "moves": ["Rage Powder", "Spore", "Pollen Puff", "Clear Smog"],
+          "tera_type": "Water",
+          "usage_tier": "S",
+          "notes": "Standard. Bold + max Def survives physical hits long enough for multiple Spores. Tera Water removes Fire and Ice weaknesses. Pollen Puff heals partner.",
+          "benchmarks": [
+            "Survives Adamant Koraidon Flare Blitz",
+            "Survives Jolly Urshifu Wicked Blow critical hit"
+          ]
+        },
+        {
+          "id": "amoonguss-rocky-helmet",
+          "label": "Rocky Helmet Chip Damage",
+          "nature": "Bold",
+          "evs": { "hp": 252, "atk": 0, "def": 252, "spa": 4, "spd": 0, "spe": 0 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Rocky Helmet",
+          "moves": ["Rage Powder", "Spore", "Pollen Puff", "Protect"],
+          "tera_type": "Water",
+          "usage_tier": "A",
+          "notes": "Rocky Helmet punishes contact moves +1/6 HP per hit. Effective against Urshifu Surging Strikes (3 hits × 1/6 = 50% damage returned).",
+          "benchmarks": [
+            "Rocky Helmet deals 50% total HP damage vs Urshifu Surging Strikes"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gholdengo",
+      "dex": 1000,
+      "type": ["Steel", "Ghost"],
+      "role": "Special Attacker",
+      "base_stats": { "hp": 87, "atk": 60, "def": 95, "spa": 133, "spd": 91, "spe": 84 },
+      "spreads": [
+        {
+          "id": "gholdengo-specs-max",
+          "label": "Choice Specs Max Output",
+          "nature": "Timid",
+          "evs": { "hp": 4, "atk": 0, "def": 0, "spa": 252, "spd": 0, "spe": 252 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Choice Specs",
+          "moves": ["Make It Rain", "Shadow Ball", "Dazzling Gleam", "Recover"],
+          "tera_type": "Steel",
+          "usage_tier": "S",
+          "notes": "Standard. Good as Gold blocks Spore, Taunt, and Rage Powder. Make It Rain hits both opponents at 120 BP (75×1.5 spread). Recover maintains longevity.",
+          "benchmarks": [
+            "Make It Rain: effectively 90 BP vs each target after spread modifier",
+            "Immune to all status moves via Good as Gold"
+          ]
+        },
+        {
+          "id": "gholdengo-av-bulky",
+          "label": "Assault Vest Bulky Attacker",
+          "nature": "Modest",
+          "evs": { "hp": 252, "atk": 0, "def": 0, "spa": 252, "spd": 4, "spe": 0 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Assault Vest",
+          "moves": ["Make It Rain", "Shadow Ball", "Dazzling Gleam", "Flash Cannon"],
+          "tera_type": "Fairy",
+          "usage_tier": "A",
+          "notes": "Trades speed for bulk. AV + base 91 SpDef + Modest SpAtk creates durable spread threat. Tera Fairy for Dark immunity.",
+          "benchmarks": []
+        }
+      ]
+    },
+    {
+      "name": "Cresselia",
+      "dex": 488,
+      "type": ["Psychic"],
+      "role": "Trick Room Setter / Support",
+      "base_stats": { "hp": 120, "atk": 70, "def": 120, "spa": 75, "spd": 130, "spe": 85 },
+      "spreads": [
+        {
+          "id": "cresselia-mental-herb-def",
+          "label": "Mental Herb Max Defense",
+          "nature": "Bold",
+          "evs": { "hp": 252, "atk": 0, "def": 252, "spa": 0, "spd": 4, "spe": 0 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Mental Herb",
+          "moves": ["Trick Room", "Lunar Dance", "Icy Wind", "Helping Hand"],
+          "tera_type": "Steel",
+          "usage_tier": "S",
+          "notes": "Primary Trick Room setter. Mental Herb guarantees one Trick Room vs Taunt. Lunar Dance fully revives partner. Tera Steel removes Bug, Ghost, Dark weaknesses.",
+          "benchmarks": [
+            "Survives Adamant Koraidon Collision Course",
+            "Lunar Dance is VGC's only PP-restoring full revival move"
+          ]
+        },
+        {
+          "id": "cresselia-sitrus-balanced",
+          "label": "Sitrus Berry Balanced Bulk",
+          "nature": "Calm",
+          "evs": { "hp": 252, "atk": 0, "def": 4, "spa": 0, "spd": 252, "spe": 0 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Sitrus Berry",
+          "moves": ["Trick Room", "Lunar Dance", "Moonblast", "Helping Hand"],
+          "tera_type": "Ghost",
+          "usage_tier": "A",
+          "notes": "Calm boosts SpDef for special bulk. Moonblast for Dark-type coverage. Tera Ghost makes Cresselia immune to Normal and Fighting moves.",
+          "benchmarks": []
+        }
+      ]
+    },
+    {
+      "name": "Porygon2",
+      "dex": 233,
+      "type": ["Normal"],
+      "role": "Trick Room Setter",
+      "base_stats": { "hp": 85, "atk": 80, "def": 90, "spa": 105, "spd": 95, "spe": 60 },
+      "spreads": [
+        {
+          "id": "porygon2-eviolite-bold",
+          "label": "Eviolite Max Defense",
+          "nature": "Bold",
+          "evs": { "hp": 252, "atk": 0, "def": 252, "spa": 0, "spd": 4, "spe": 0 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Eviolite",
+          "moves": ["Trick Room", "Ice Beam", "Thunderbolt", "Recover"],
+          "tera_type": "Normal",
+          "usage_tier": "S",
+          "notes": "Eviolite multiplies Def and SpDef by ×1.5. Download may boost SpAtk or Def automatically. Recover ensures longevity for multiple TR cycles.",
+          "benchmarks": [
+            "Eviolite Def = effectively 135 base Defense",
+            "Eviolite SpDef = effectively 142 base SpDef",
+            "Survives most super-effective special hits with Eviolite"
+          ]
+        },
+        {
+          "id": "porygon2-eviolite-calm",
+          "label": "Eviolite Max Special Bulk",
+          "nature": "Calm",
+          "evs": { "hp": 252, "atk": 0, "def": 4, "spa": 0, "spd": 252, "spe": 0 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Eviolite",
+          "moves": ["Trick Room", "Ice Beam", "Shadow Ball", "Recover"],
+          "tera_type": "Ghost",
+          "usage_tier": "A",
+          "notes": "Calm when facing more special attackers. Tera Ghost removes Normal weakness to Fighting. Shadow Ball for Ghost coverage after Tera.",
+          "benchmarks": []
+        }
+      ]
+    },
+    {
+      "name": "Rillaboom",
+      "dex": 812,
+      "type": ["Grass"],
+      "role": "Grassy Terrain Control",
+      "base_stats": { "hp": 100, "atk": 125, "def": 90, "spa": 60, "spd": 70, "spe": 85 },
+      "spreads": [
+        {
+          "id": "rillaboom-cb-adamant",
+          "label": "Choice Band Max Damage",
+          "nature": "Adamant",
+          "evs": { "hp": 252, "atk": 252, "def": 4, "spa": 0, "spd": 0, "spe": 0 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Choice Band",
+          "moves": ["Grassy Glide", "Wood Hammer", "U-turn", "High Horsepower"],
+          "tera_type": "Grass",
+          "usage_tier": "S",
+          "notes": "Grassy Glide has +1 priority in Grassy Terrain. Choice Band + Tera Grass Grassy Glide is extremely strong priority damage. High Horsepower immune to Grassy Terrain reduction.",
+          "benchmarks": [
+            "Grassy Glide +1 priority in own Grassy Terrain",
+            "High Horsepower bypasses Grassy Terrain Earthquake reduction"
+          ]
+        },
+        {
+          "id": "rillaboom-av-bulk",
+          "label": "Assault Vest Bulky Attacker",
+          "nature": "Adamant",
+          "evs": { "hp": 252, "atk": 252, "def": 4, "spa": 0, "spd": 0, "spe": 0 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Assault Vest",
+          "moves": ["Grassy Glide", "Wood Hammer", "U-turn", "High Horsepower"],
+          "tera_type": "Fire",
+          "usage_tier": "A",
+          "notes": "AV for special survivability. Tera Fire removes Ice and Fire weaknesses for one turn. Good in rain matchups.",
+          "benchmarks": []
+        }
+      ]
+    },
+    {
+      "name": "Chien-Pao",
+      "dex": 1002,
+      "type": ["Dark", "Ice"],
+      "role": "Physical Attacker",
+      "base_stats": { "hp": 80, "atk": 135, "def": 80, "spa": 85, "spd": 80, "spe": 135 },
+      "spreads": [
+        {
+          "id": "chienpao-sash-jolly",
+          "label": "Focus Sash Lead",
+          "nature": "Jolly",
+          "evs": { "hp": 4, "atk": 252, "def": 0, "spa": 0, "spd": 0, "spe": 252 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Focus Sash",
+          "moves": ["Icicle Crash", "Sucker Punch", "Sacred Sword", "Protect"],
+          "tera_type": "Ice",
+          "usage_tier": "S",
+          "notes": "Sword of Ruin drops all Defense by 25% on entry. Focus Sash guarantees survival. Sucker Punch priority. Sacred Sword ignores stat changes.",
+          "benchmarks": [
+            "Sword of Ruin reduces all Pokémon's Defense by 25%",
+            "Icicle Crash effective BP vs Sword of Ruin targets = ~163 effective"
+          ]
+        },
+        {
+          "id": "chienpao-cb-adamant",
+          "label": "Choice Band Max Power",
+          "nature": "Adamant",
+          "evs": { "hp": 4, "atk": 252, "def": 0, "spa": 0, "spd": 0, "spe": 252 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Choice Band",
+          "moves": ["Icicle Crash", "Sucker Punch", "Sacred Sword", "Ice Shard"],
+          "tera_type": "Dark",
+          "usage_tier": "A",
+          "notes": "Adamant for max damage. Choice Band OHKOs most targets factoring Sword of Ruin Defense drop. Ice Shard priority for weakened targets.",
+          "benchmarks": []
+        }
+      ]
+    },
+    {
+      "name": "Kingambit",
+      "dex": 983,
+      "type": ["Dark", "Steel"],
+      "role": "Late Game Sweeper",
+      "base_stats": { "hp": 100, "atk": 135, "def": 120, "spa": 60, "spd": 85, "spe": 50 },
+      "spreads": [
+        {
+          "id": "kingambit-av-adamant",
+          "label": "Assault Vest Supreme Overlord",
+          "nature": "Adamant",
+          "evs": { "hp": 252, "atk": 252, "def": 4, "spa": 0, "spd": 0, "spe": 0 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Assault Vest",
+          "moves": ["Kowtow Cleave", "Iron Head", "Sucker Punch", "Low Kick"],
+          "tera_type": "Dark",
+          "usage_tier": "S",
+          "notes": "Supreme Overlord: +10% Attack per fainted ally (max +50%). AV patches SpDef weakness. Defiant converts Intimidate to net +2 Attack. Kowtow Cleave never misses.",
+          "benchmarks": [
+            "With 5 fainted allies: effective Attack ~202.5 before item",
+            "Defiant: Intimidate results in net +2 Attack (= ignores -1, gains +2)"
+          ]
+        },
+        {
+          "id": "kingambit-lo-jolly",
+          "label": "Life Orb Speed Speed Control",
+          "nature": "Jolly",
+          "evs": { "hp": 4, "atk": 252, "def": 0, "spa": 0, "spd": 0, "spe": 252 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Life Orb",
+          "moves": ["Kowtow Cleave", "Iron Head", "Sucker Punch", "Swords Dance"],
+          "tera_type": "Fighting",
+          "usage_tier": "A",
+          "notes": "Jolly + max Spe for speed control outside TR. Life Orb for early-game pressure before Supreme Overlord stacks. Tera Fighting removes 4× Fighting weakness temporarily.",
+          "benchmarks": []
+        }
+      ]
+    },
+    {
+      "name": "Great Tusk",
+      "dex": 984,
+      "type": ["Ground", "Fighting"],
+      "role": "Physical Attacker / Speed Control",
+      "base_stats": { "hp": 115, "atk": 131, "def": 131, "spa": 53, "spd": 53, "spe": 87 },
+      "spreads": [
+        {
+          "id": "greattusk-booster-jolly",
+          "label": "Booster Energy Fast Attacker",
+          "nature": "Jolly",
+          "evs": { "hp": 4, "atk": 252, "def": 0, "spa": 0, "spd": 0, "spe": 252 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Booster Energy",
+          "moves": ["Earthquake", "Close Combat", "Rapid Spin", "Protect"],
+          "tera_type": "Fighting",
+          "usage_tier": "S",
+          "notes": "Protosynthesis + Booster Energy boosts Attack 30% = effective 170. Gen 9 Rapid Spin raises Speed +1 AND clears hazards. Jolly outspeeds base 85 uninvested after Rapid Spin.",
+          "benchmarks": [
+            "Rapid Spin raises Speed +1 in Gen 9",
+            "Effective 170 Attack with Protosynthesis boost"
+          ]
+        },
+        {
+          "id": "greattusk-av-adamant",
+          "label": "Assault Vest Bulky Attacker",
+          "nature": "Adamant",
+          "evs": { "hp": 252, "atk": 252, "def": 4, "spa": 0, "spd": 0, "spe": 0 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Assault Vest",
+          "moves": ["Earthquake", "Close Combat", "Ice Spinner", "Rapid Spin"],
+          "tera_type": "Water",
+          "usage_tier": "A",
+          "notes": "AV + 115 HP creates enormous physical bulk on a 131 Def base. Adamant for max damage. Ice Spinner removes opposing terrain. Tera Water handles Fire weakness.",
+          "benchmarks": [
+            "Survives Calyrex-Ice Glacial Lance at full HP with AV"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chi-Yu",
+      "dex": 1004,
+      "type": ["Fire", "Dark"],
+      "role": "Special Attacker",
+      "base_stats": { "hp": 55, "atk": 80, "def": 80, "spa": 135, "spd": 120, "spe": 100 },
+      "spreads": [
+        {
+          "id": "chiyu-scarf-timid",
+          "label": "Choice Scarf Speed Control",
+          "nature": "Timid",
+          "evs": { "hp": 4, "atk": 0, "def": 0, "spa": 252, "spd": 0, "spe": 252 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Choice Scarf",
+          "moves": ["Heat Wave", "Overheat", "Dark Pulse", "Snarl"],
+          "tera_type": "Fire",
+          "usage_tier": "S",
+          "notes": "Beads of Ruin drops all SpDef by 25%. Scarf + base 100 Speed outspeeds most threats. Heat Wave spread + Beads of Ruin = massive effective output. Snarl spread drops SpAtk.",
+          "benchmarks": [
+            "Beads of Ruin reduces all SpDef by 25%",
+            "Heat Wave effective power with Beads of Ruin: ~118 effective BP"
+          ]
+        },
+        {
+          "id": "chiyu-specs-modest",
+          "label": "Choice Specs Max SpAtk",
+          "nature": "Modest",
+          "evs": { "hp": 4, "atk": 0, "def": 0, "spa": 252, "spd": 0, "spe": 252 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Choice Specs",
+          "moves": ["Heat Wave", "Overheat", "Tera Blast", "Dark Pulse"],
+          "tera_type": "Flying",
+          "usage_tier": "A",
+          "notes": "Modest Choice Specs + Beads of Ruin = enormous SpAtk ceiling. Tera Flying for Ground immunity and Tera Blast coverage. Slower than Scarf but hits significantly harder.",
+          "benchmarks": []
+        }
+      ]
+    },
+    {
+      "name": "Urshifu",
+      "dex": 892,
+      "form": "Rapid Strike",
+      "type": ["Water", "Fighting"],
+      "role": "Physical Attacker",
+      "base_stats": { "hp": 100, "atk": 130, "def": 100, "spa": 63, "spd": 60, "spe": 97 },
+      "spreads": [
+        {
+          "id": "urshifu-rs-lo-jolly",
+          "label": "Life Orb Rapid Strike",
+          "nature": "Jolly",
+          "evs": { "hp": 4, "atk": 252, "def": 0, "spa": 0, "spd": 0, "spe": 252 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Life Orb",
+          "moves": ["Surging Strikes", "Close Combat", "Aqua Jet", "Protect"],
+          "tera_type": "Water",
+          "usage_tier": "S",
+          "notes": "Unseen Fist bypasses Protect on contact moves. Surging Strikes 3-hit always crits = 168.75 effective BP in rain. Aqua Jet priority. Jolly for speed control.",
+          "benchmarks": [
+            "Surging Strikes bypasses Protect via Unseen Fist",
+            "3 guaranteed crits: effective 168.75 BP in Rain",
+            "Surging Strikes never misses Protect"
+          ]
+        },
+        {
+          "id": "urshifu-rs-cb-adamant",
+          "label": "Choice Band Max Power",
+          "nature": "Adamant",
+          "evs": { "hp": 4, "atk": 252, "def": 0, "spa": 0, "spd": 0, "spe": 252 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Choice Band",
+          "moves": ["Surging Strikes", "Close Combat", "Aqua Jet", "U-turn"],
+          "tera_type": "Water",
+          "usage_tier": "A",
+          "notes": "Adamant Choice Band for maximum Close Combat / Surging Strikes damage. U-turn for momentum. Trades speed for power.",
+          "benchmarks": [
+            "Choice Band Surging Strikes crits = OHKOs most uninvested targets in rain"
+          ]
+        }
+      ]
+    }
+  ]
+}
