@@ -1,10 +1,10 @@
 {
   "meta": {
-    "version": "2.0.0",
-    "regulation": "F",
+    "version": "2.1.0",
+    "regulation": "I",
     "format": "VGC Doubles (Level 50)",
-    "last_updated": "2026-04-01",
-    "source": "Tournament results, Regulation F team reports",
+    "last_updated": "2026-04-24",
+    "source": "Tournament results, Regulation I team reports and open qualifier data",
     "schema_version": "1.2"
   },
   "pokemon": [
@@ -811,6 +811,149 @@
           "notes": "Adamant Choice Band for maximum Close Combat / Surging Strikes damage. U-turn for momentum. Trades speed for power.",
           "benchmarks": [
             "Choice Band Surging Strikes crits = OHKOs most uninvested targets in rain"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mewtwo",
+      "dex": 150,
+      "type": ["Psychic"],
+      "role": "Restricted Attacker",
+      "base_stats": { "hp": 106, "atk": 110, "def": 90, "spa": 154, "spd": 90, "spe": 130 },
+      "spreads": [
+        {
+          "id": "mewtwo-lo-max-speed",
+          "label": "Life Orb Max Speed",
+          "nature": "Timid",
+          "evs": { "hp": 4, "atk": 0, "def": 0, "spa": 252, "spd": 0, "spe": 252 },
+          "ivs": { "hp": 31, "atk": 0, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Life Orb",
+          "moves": ["Psystrike", "Ice Beam", "Thunderbolt", "Protect"],
+          "tera_type": "Psychic",
+          "usage_tier": "A",
+          "notes": "Standard offensive spread. Psystrike calculates against physical Defense — exceptional against high SpDef targets like Cresselia and Porygon2. 188 max Speed outspeeds Eternatus and everything below.",
+          "benchmarks": [
+            "188 Speed — outspeeds Eternatus max Speed (188 tie, Timid wins speed tie on average)",
+            "Timid Psystrike OHKOs uninvested Kyogre after Life Orb under Psychic Terrain",
+            "Ice Beam covers Koraidon, Rayquaza, Landorus-Therian in one slot"
+          ]
+        },
+        {
+          "id": "mewtwo-scarf-timid",
+          "label": "Choice Scarf Speed Control",
+          "nature": "Timid",
+          "evs": { "hp": 4, "atk": 0, "def": 0, "spa": 252, "spd": 0, "spe": 252 },
+          "ivs": { "hp": 31, "atk": 0, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Choice Scarf",
+          "moves": ["Psystrike", "Ice Beam", "Shadow Ball", "Thunderbolt"],
+          "tera_type": "Psychic",
+          "usage_tier": "A",
+          "notes": "Scarf stat = 282 — outspeeds all non-Scarf Pokémon including Calyrex-Shadow (222). Use when Tailwind support is unavailable. Locks into one move per switch-in.",
+          "benchmarks": [
+            "282 Speed with Scarf — outspeeds Calyrex-Shadow 222 and Zacian 200",
+            "Shadow Ball coverage for Ghost-types and Calyrex-Ice"
+          ]
+        },
+        {
+          "id": "mewtwo-bulky-attacker",
+          "label": "Bulky Attacker",
+          "nature": "Modest",
+          "evs": { "hp": 252, "atk": 0, "def": 4, "spa": 252, "spd": 0, "spe": 0 },
+          "ivs": { "hp": 31, "atk": 0, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Life Orb",
+          "moves": ["Psystrike", "Ice Beam", "Thunderbolt", "Protect"],
+          "tera_type": "Ghost",
+          "usage_tier": "B",
+          "notes": "Used in Trick Room teams or when Tailwind support is reliable. Modest adds ~10% SpAtk over Timid. Tera Ghost removes Normal weakness and prevents Fake Out. Sacrifices Speed matchup against Calyrex-Shadow.",
+          "benchmarks": [
+            "Modest Psystrike OHKOs Assault Vest Incineroar after chip",
+            "252 HP survives Jolly Koraidon Collision Course at full HP"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Zacian",
+      "dex": 888,
+      "type": ["Fairy", "Steel"],
+      "role": "Restricted Attacker",
+      "base_stats": { "hp": 92, "atk": 170, "def": 115, "spa": 80, "spd": 115, "spe": 148 },
+      "spreads": [
+        {
+          "id": "zacian-max-atk-speed",
+          "label": "Max Attack Max Speed (standard)",
+          "nature": "Jolly",
+          "evs": { "hp": 4, "atk": 252, "def": 0, "spa": 0, "spd": 0, "spe": 252 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Rusted Sword",
+          "moves": ["Behemoth Blade", "Close Combat", "Wild Charge", "Protect"],
+          "tera_type": "Fairy",
+          "usage_tier": "S",
+          "notes": "Standard Zacian with Rusted Sword (Crowned form, +10 Attack). Intrepid Sword +1 on entry means effective Attack is 255 from turn 1. 200 max Speed — fastest Steel-type restricted. Jolly outspeeds Mewtwo Timid (188) and Koraidon/Miraidon (205) at max.",
+          "benchmarks": [
+            "200 Speed — outspeeds Mewtwo Timid (188) and Eternatus Timid (188)",
+            "Intrepid Sword +1 Atk on entry: effective Attack 255 from turn 1",
+            "Behemoth Blade OHKOs uninvested Calyrex-Ice (Steel vs Ice/Psychic)",
+            "Close Combat + Tera Fairy removes Close Combat's Defense drop concern"
+          ]
+        },
+        {
+          "id": "zacian-bulky-jolly",
+          "label": "Bulky Speed (EV shift to HP)",
+          "nature": "Jolly",
+          "evs": { "hp": 164, "atk": 252, "def": 0, "spa": 0, "spd": 0, "spe": 92 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Rusted Sword",
+          "moves": ["Behemoth Blade", "Close Combat", "Play Rough", "Protect"],
+          "tera_type": "Normal",
+          "usage_tier": "A",
+          "notes": "92 Speed EVs reaches 167 — still outspeeds Kyogre max speed (156) and most common support Pokémon. HP EVs improve survivability against Calyrex-Shadow Astral Barrage. Tera Normal makes Behemoth Blade 120 BP Normal type — avoids Ghost immunity.",
+          "benchmarks": [
+            "167 Speed outspeeds max Kyogre (156), max Groudon (156)",
+            "164 HP EVs: survives Timid Calyrex-Shadow Astral Barrage at full HP (needs verification vs Life Orb)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Groudon",
+      "dex": 383,
+      "type": ["Ground"],
+      "role": "Restricted Sun Setter",
+      "base_stats": { "hp": 100, "atk": 150, "def": 140, "spa": 100, "spd": 90, "spe": 90 },
+      "spreads": [
+        {
+          "id": "groudon-lo-max-atk",
+          "label": "Life Orb Max Attack",
+          "nature": "Adamant",
+          "evs": { "hp": 4, "atk": 252, "def": 0, "spa": 0, "spd": 0, "spe": 252 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Life Orb",
+          "moves": ["Precipice Blades", "Rock Slide", "Fire Punch", "Protect"],
+          "tera_type": "Fire",
+          "usage_tier": "A",
+          "notes": "Paired with Calyrex-Shadow in dual-restricted Sun teams. 156 max Speed ties Kyogre. Precipice Blades 120 BP spread at 150 Atk under Sun is the highest physical spread damage in format. Rock Slide provides spread flinch coverage.",
+          "benchmarks": [
+            "156 Speed ties Kyogre max Speed — both move simultaneously, avoiding speed loss",
+            "Adamant Precipice Blades OHKOs uninvested Miraidon",
+            "Tera Fire Fire Punch under Sun OHKOs Calyrex-Ice (x4 Fire weakness)"
+          ]
+        },
+        {
+          "id": "groudon-av-bulky",
+          "label": "Assault Vest Bulky Physical",
+          "nature": "Adamant",
+          "evs": { "hp": 252, "atk": 92, "def": 0, "spa": 0, "spd": 164, "spe": 0 },
+          "ivs": { "hp": 31, "atk": 31, "def": 31, "spa": 31, "spd": 31, "spe": 31 },
+          "item": "Assault Vest",
+          "moves": ["Precipice Blades", "Rock Slide", "Fire Punch", "Solar Blade"],
+          "tera_type": "Ground",
+          "usage_tier": "B",
+          "notes": "Maximizes survivability for sustained presence. 164 SpDef EVs with AV allows Groudon to survive Timid Kyogre Origin Pulse in Rain — critical for weather-war matchups. Solar Blade one-turn under Sun for Kyogre/Rain types.",
+          "benchmarks": [
+            "AV + 164 SpDef: survives Timid Kyogre Origin Pulse in Rain at full HP",
+            "252 HP survives Jolly Calyrex-Ice Glacial Lance (needs Tera or partner support)"
           ]
         }
       ]
